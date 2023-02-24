@@ -18,7 +18,7 @@ with open(fq_file,'r') as f:
                 line=re.sub('@','>',line)
                 fa_out.write(line)
             else:
-                print lineno+' sequence title error!'
+                print(lineno+' sequence title error!')
                 pdb.set_trace()
         elif lineno%4==2:
             fa_out.write(line)
